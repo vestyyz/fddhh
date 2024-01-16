@@ -1,0 +1,60 @@
+local lib = require(game.ReplicatedStorage:WaitForChild('Framework'):WaitForChild('Library'))
+local Libraryy = loadstring(game:HttpGet("https://raw.githubusercontent.com/Robojini/Tuturial_UI_Library/main/UI_Template_1"))()
+local Window = Libraryy.CreateLib("RoFASTâ˜„ PSX", "RJTheme3")
+local Tab = Window:NewTab("ðŸŒŽ - Main")
+local Section = Tab:NewSection("Update - 26.02.2023")
+local Section = Tab:NewSection("New script!ðŸŽˆ Update every day.")
+local Tab = Window:NewTab("ðŸš… - Function")
+local Section = Tab:NewSection("Visual Trade ðŸŽŠ")
+Section:NewToggle("\226\156\133 On / \226\157\140 Off", "", function(state)
+    if state then
+game.Players.LocalPlayer.PlayerGui.Message.Enabled = true
+lib.Message.New("\226\156\133 Script on.")
+    else
+game.Players.LocalPlayer.PlayerGui.Message.Enabled = true
+lib.Message.New("\226\157\140 Script off.")
+    end
+end)
+Section:NewButton("Fake TITANIC ðŸ§©", "", function()
+game.Players.LocalPlayer.PlayerGui.Message.Enabled = true
+lib.Message.New("\226\156\133 Succes!")
+end)
+Section:NewButton("Fake BANANA ðŸŒ", "", function()
+game.Players.LocalPlayer.PlayerGui.Message.Enabled = true
+lib.Message.New("\226\156\133 Succes!")
+end)
+Section:NewButton("Fake RANDOM HUGE ðŸ§¬", "", function()
+game.Players.LocalPlayer.PlayerGui.Message.Enabled = true
+lib.Message.New("\226\156\133 Succes!")
+end)
+local Tab = Window:NewTab("ðŸ§µ - Partner Spoofer")
+local Section = Tab:NewSection("Sign your pets and take all hoverboard.ðŸŽ€")
+Section:NewButton("Spoff ðŸ’£", "", function()
+game.Players.LocalPlayer.PlayerGui.Message.Enabled = true
+lib.Message.New("\226\156\133 Succes!")
+end)
+local Tab = Window:NewTab("ðŸ§¸ - Dupe")
+local Section = Tab:NewSection("Click for take pets ðŸ”«")
+Section:NewButton("Titanic PetðŸ—¡", "", function()
+game.Players.LocalPlayer.PlayerGui.Message.Enabled = true
+lib.Message.New("\226\156\133 Succes!")
+end)
+Section:NewButton("Boots Dupe ðŸ’Ž", "", function()
+game.Players.LocalPlayer.PlayerGui.Message.Enabled = true
+lib.Message.New("\226\156\133 Enabled...")
+local diamonds = game.Players.LocalPlayer.PlayerGui.Main.Right.Diamonds.Amount
+    local odometer = game.Players.LocalPlayer.PlayerGui.Main.Right.Diamonds["Amount_odometerGUIFX"]
+
+    local diamonds_clone = diamonds:Clone()
+    local odometer_clone = odometer:Clone()
+
+    odometer_clone.Parent = diamonds.Parent
+    diamonds_clone.Parent = odometer.Parent
+
+    diamonds.Visible = false
+    odometer.Visible = false
+end)
+    -- \226\156\133 - Ð·ÐµÐ»Ñ‘Ð½Ð°Ñ Ð³Ð°Ð»Ð¾Ñ‡ÐºÐ°
+    -- \240\159\142\137 - Ñ„ÐµÐ¹ÐµÑ€Ð²ÐµÑ€Ðº
+    -- \240\159\147\169 - Ð¾Ñ‚Ð¿Ñ€Ð°Ð²Ð»ÐµÐ½Ð¾Ðµ Ð¿Ð¸ÑÑŒÐ¼Ð¾
+    -- \226\157\140 - ÐºÑ€ÐµÑÑ‚Ð¸Ðº
